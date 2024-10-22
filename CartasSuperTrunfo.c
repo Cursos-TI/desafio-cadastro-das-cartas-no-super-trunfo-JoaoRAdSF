@@ -30,36 +30,36 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     printf("\nSuper Trunfo Paises\n\nVamos começar o cadastro das cartas,\npense em um estado e digite a primeira letra do estado que escolheu: (Ex. São Paulo, digite S)\n");
-    scanf("%c", &estado);
+    scanf("%c", &estado); //Solicitando ao usuario que digite apenas a primeira letra do estado que escolheu.
 
-    printf("\nPerfeito, Ele será representado pela letra: %c", estado);
+    printf("\nPerfeito, Ele será representado pela letra: %c", estado); //Imprimindo a letra e definindo para ele que aquela letra representa o estado.
 
     printf("\n\nAgora sim, vamos cadastrar os dados da sua carta!\nComece digitando o nome de uma cidade: \n");
-    scanf("%s", &cidade);
+    scanf("%s", &cidade); //Recebendo o nome da cidade atraves de uma string.
 
     printf("Preciso que defina um código para essa cidade: (Ex. 01, 02, 03..)\n");
-    scanf("%s", &codigo);
+    scanf("%s", &codigo); //O usuario escolhe qual o codigo que vai ser atribuido a sua carta.
 
-    printf("\nMaravilha, %s foi definida como a primeira cidade desse estado e será representada pelo código %c%s!", cidade, estado, codigo);
+    printf("\nMaravilha, %s foi definida como a primeira cidade desse estado e será representada pelo código %c%s!", cidade, estado, codigo); //Imprimindo a cidade que ele digitou e logo após a letra que ele colocou no estado junto do código deixando-os juntos (Ex: A37, C14, ..).
 
     printf("\n\nNos informe a população dessa cidade: ");
-    scanf("%d", &populacao);
+    scanf("%d", &populacao); //Recebendo a população através de uma variavel inteira.
 
     printf("Ótimo, agora digite área em km²: ");
-    scanf("%f", &area);
+    scanf("%f", &area); //Recebendo a população através de uma variavel float.
 
     printf("Quase lá, qual PIB da cidade? ");
-    scanf("%f", &pib);
+    scanf("%f", &pib); //Recebendo a população através de uma variavel float.
 
     printf("E para finalizar, quantos pontos turisticos existem nessa cidade? ");
-    scanf("%d", &num_pontos_turisticos);
-
-    printf("\nCartas cadastradas!\nAqui estão os dados:\n\nEstado: %c\nCódigo da Carta: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: R$%.2f\nNúmero de Pontos Turísticos: %d\n", estado, estado, codigo, cidade, populacao, area, pib, num_pontos_turisticos);
-
+    scanf("%d", &num_pontos_turisticos); //Recebendo a população através de uma variavel inteira.
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    printf("\nCartas cadastradas!\nAqui estão os dados:\n\nEstado: %c\nCódigo da Carta: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: R$%.2f\nNúmero de Pontos Turísticos: %d\n", estado, estado, codigo, cidade, populacao, area, pib, num_pontos_turisticos);
+    // Imprimindo os dados fornecidos pelo usuario de forma alinhada, linha apos linha.
 
     return 0;
 }
